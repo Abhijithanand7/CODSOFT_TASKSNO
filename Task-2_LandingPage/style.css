@@ -1,0 +1,353 @@
+/* Reset & Base Setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f8fafc;
+    color: #0f172a;
+    overflow-x: hidden;
+}
+
+/* 1. Navbar Layout */
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 18px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+    color: #0f172a;
+    letter-spacing: -0.5px;
+}
+
+.logo span {
+    color: #2563eb;
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #475569;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #2563eb;
+}
+
+.nav-auth {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.btn-login {
+    text-decoration: none;
+    color: #334155;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.btn-signup {
+    text-decoration: none;
+    background-color: #047857; /* Matches green split theme from demo */
+    color: #ffffff;
+    padding: 9px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.2s ease;
+}
+
+.btn-signup:hover {
+    background-color: #065f46;
+}
+
+/* 2. Hero Section (Split Screen Style) */
+.hero-wrapper {
+    display: flex;
+    min-height: calc(100vh - 73px);
+    background: linear-gradient(90deg, #f8fafc 60%, #064e3b 60%); /* Split background */
+}
+
+.hero-left {
+    width: 60%;
+    padding: 80px 60px 60px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-left h1 {
+    font-size: 48px;
+    line-height: 1.15;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 20px;
+}
+
+.hero-left h1 span {
+    color: #2563eb;
+}
+
+.hero-left p {
+    font-size: 17px;
+    line-height: 1.6;
+    color: #475569;
+    margin-bottom: 35px;
+    max-width: 520px;
+}
+
+.hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 60px;
+}
+
+.btn-primary {
+    background-color: #ea580c; /* Accent orange button */
+    color: #ffffff;
+    padding: 14px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: background 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #c2410c;
+}
+
+.btn-secondary {
+    text-decoration: none;
+    color: #334155;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 14px 20px;
+}
+
+.partner-logos {
+    display: flex;
+    gap: 36px;
+    color: #94a3b8;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: -0.5px;
+}
+
+/* Hero Right Section */
+.hero-right {
+    width: 40%;
+    padding: 60px 8% 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+/* Floating Badge */
+.stat-badge {
+    position: absolute;
+    top: 70px;
+    left: -20px;
+    background-color: #065f46;
+    color: #ffffff;
+    padding: 12px 20px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.badge-icon {
+    font-size: 20px;
+}
+
+.badge-text strong {
+    display: block;
+    font-size: 14px;
+}
+
+.badge-text span {
+    font-size: 12px;
+    color: #a7f3d0;
+}
+
+/* Developer Console Card */
+.code-card {
+    background-color: #0f172a;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    border: 1px solid #1e293b;
+    margin-top: 40px;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #1e293b;
+    margin-bottom: 16px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.red { background-color: #ef4444; }
+.yellow { background-color: #f59e0b; }
+.green { background-color: #10b981; }
+
+.card-title {
+    color: #64748b;
+    font-size: 12px;
+    margin-left: auto;
+    font-family: monospace;
+}
+
+.card-body {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.line { color: #cbd5e1; }
+.line span { color: #38bdf8; }
+.text-green { color: #34d399; }
+.text-blue { color: #60a5fa; }
+.highlight { color: #f43f5e; font-weight: bold; }
+
+/* 3. Services Section */
+.services-section {
+    padding: 100px 10%;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.section-heading h2 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.section-heading p {
+    color: #64748b;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+.services-grid {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.service-card {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 36px 28px;
+    border-radius: 12px;
+    flex: 1;
+    text-align: left;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.05);
+}
+
+.service-card .icon {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+.service-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #0f172a;
+}
+
+.service-card p {
+    font-size: 14px;
+    color: #64748b;
+    line-height: 1.6;
+}
+
+/* 4. CTA Banner */
+.cta-banner {
+    background-color: #047857;
+    color: #ffffff;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.cta-banner h2 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.cta-banner p {
+    color: #a7f3d0;
+    margin-bottom: 28px;
+    font-size: 16px;
+}
+
+/* 5. Footer */
+footer {
+    background-color: #022c22;
+    color: #6ee7b7;
+    text-align: center;
+    padding: 24px;
+    font-size: 13px;
+}
+
+/* Responsive Rules */
+@media (max-width: 900px) {
+    .hero-wrapper {
+        flex-direction: column;
+        background: #f8fafc;
+    }
+    .hero-left, .hero-right {
+        width: 100%;
+        padding: 40px 24px;
+    }
+    .hero-right {
+        background-color: #064e3b;
+    }
+    .services-grid {
+        flex-direction: column;
+    }
+}
