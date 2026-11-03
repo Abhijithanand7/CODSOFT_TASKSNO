@@ -38,15 +38,10 @@ This repository contains the tasks completed during the Web Development Virtual 
 
 
 
-\## 🛠️ How to View
+## 🛠️ How to View
 
 Clone the repository and open the `index.html` file inside each task folder in any modern browser:
 
-
-
-\\`\\`\\`bash
-
-git clone https://github.com/YOUR\_GITHUB\_USERNAME/CODSOFT\_TASKSNO.git
-
-\\`\\`\\`
+```bash
+git clone [https://github.com/Abhijithanand7/CODSOFT_TASKSNO.git](https://github.com/Abhijithanand7/CODSOFT_TASKSNO.git)
 
