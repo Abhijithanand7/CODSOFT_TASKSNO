@@ -20,10 +20,10 @@
                 <a href="#pricing">Pricing</a>
             </nav>
             <div class="nav-auth">
-                <a href="#login" class="btn-login">Log in</a>
-                <a href="#signup" class="btn-signup">Sign up</a>
-            </div>
-        </div>
+    <a href="#" onclick="alert('Login modal coming soon!')" class="btn-login">Log in</a>
+    <a href="#" onclick="alert('Sign up flow coming soon!')" class="btn-signup">Sign up</a>
+</div>
+        
     </header>
 
     <!-- Hero Section with Visual Split -->
@@ -32,7 +32,7 @@
             <h1>Empower Your Code with <span>Modern Solutions</span></h1>
             <p>Accelerate testing, streamline deployment, and build robust software applications with our intelligent developer ecosystem tailored for high-growth tech teams.</p>
             <div class="hero-actions">
-                <a href="#signup" class="btn-primary">Get Started</a>
+                <a href="#services" class="btn-primary">Get Started</a>
                 <a href="#services" class="btn-secondary">Explore Services</a>
             </div>
             
@@ -75,6 +75,14 @@
         </div>
     </section>
 
+    <!-- About Us Section -->
+    <section id="about" class="services-section" style="background-color: #f1f5f9;">
+        <div class="section-heading">
+            <h2>About Nexora</h2>
+            <p>Built for modern developers seeking robust automated testing, seamless deployment workflows, and high scalability.</p>
+        </div>
+    </section>
+
     <!-- Services / Features Section -->
     <section id="services" class="services-section">
         <div class="section-heading">
@@ -82,7 +90,7 @@
             <p>Comprehensive tools designed for developers, testers, and engineering leads.</p>
         </div>
         
-        <div class="services-grid">
+        <div class="services-grid" id="projects">
             <div class="service-card">
                 <div class="icon">🧪</div>
                 <h3>Automated Testing</h3>
@@ -101,17 +109,16 @@
         </div>
     </section>
 
-    <!-- Contact CTA Banner -->
+    <!-- Contact CTA Banner / Pricing / Signup Target -->
     <section id="pricing" class="cta-banner">
         <h2>Ready to transform your development workflow?</h2>
         <p>Start your 14-day free trial. No credit card required.</p>
-        <a href="#signup" class="btn-primary">Create Account</a>
+        <div id="signup" style="padding-top: 10px;">
+            <a href="#home" class="btn-primary" style="background-color: #ffffff; color: #047857;">Create Free Account</a>
+        </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Nexora Inc. All rights reserved. | CodSoft Web Development Internship — Task 2</p>
-    </footer>
-
-</body>
-</html>
+    <!-- Login Target Anchor -->
+    <div id="login" style="padding: 30px; text-align: center; background-color: #0f172a; color: #fff;">
+        <p>Secure Portal Login Simulation — <a href="#home" style="color: #38bdf8; text-decoration: none;">Back to Top ↑</a></p>
+    </div>
