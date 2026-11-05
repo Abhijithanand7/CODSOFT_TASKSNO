@@ -89,18 +89,17 @@ body {
     background-color: #0056b3;
 }
 
+/* Passport Size Image Boxes */
 .hero-image-box {
-    width: 350px;
-    height: 450px;
+    width: 130px;
+    height: 160px;
     background-color: #d1d1d1;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #777;
-    font-size: 22px;
-    font-weight: bold;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-    overflow: hidden; /* Keeps the image inside the box */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    overflow: hidden;
+    border-radius: 4px;
 }
 
 /* About Section */
@@ -114,16 +113,15 @@ body {
 }
 
 .about-image-box {
-    width: 350px;
-    height: 450px;
+    width: 130px;
+    height: 160px;
     background-color: #d1d1d1;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #777;
-    font-size: 22px;
-    font-weight: bold;
-    overflow: hidden; /* Keeps the image inside the box */
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 .about-content {
@@ -168,6 +166,7 @@ body {
 .resume-btn:hover {
     background-color: #0056b3;
 }
+
 /* Skills & Projects Sections */
 .skills-section, .projects-section {
     padding: 80px 10%;
